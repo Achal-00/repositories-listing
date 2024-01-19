@@ -8,11 +8,57 @@
   </head>
   <body>
     <header>
-      <div class="search-bar">
+      <form class="search-bar" onsubmit="onSubmit(event)">
         <img src="./assets/search-icon.svg" alt="search" />
-        <input type="text" placeholder="username" name="username" />
-      </div>
+        <input
+          type="text"
+          placeholder="username"
+          name="username"
+          id="username"
+        />
+      </form>
     </header>
+    <section class="content">
+      <div class="user-info">
+        <div class="user-main__info">
+          <div class="avatar-holder">
+            <img src="" alt="avatar" />
+          </div>
+          <div>
+            <h1></h1>
+            <p></p>
+          </div>
+        </div>
+        <div class="user-highlight">
+          <div class="user-detail user-location">
+            <span>Location</span>
+            <span>|</span>
+            <span></span>
+          </div>
+          <div class="user-detail user-repo">
+            <span>Repositories</span>
+            <span>|</span>
+            <span></span>
+          </div>
+          <div class="user-detail user-follower">
+            <span>Followers</span>
+            <span>|</span>
+            <span></span>
+          </div>
+        </div>
+        <div class="user-links">
+          <div class="link twitter">
+            <img src="./assets/link-icon.svg" alt="link" />
+            <a href="" target="_blank"></a>
+          </div>
+          <div class="link blog">
+            <img src="./assets/link-icon.svg" alt="link" />
+            <a href="" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
   </body>
-  <script src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </html>
