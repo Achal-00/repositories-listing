@@ -63,6 +63,27 @@
         <div class="pagination">
           <div class="pagination-numbers"></div>
         </div>
+        <div class="repo-overlay">
+          <div class="loader">
+            <div class="wrapper">
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="line-3"></div>
+              <div class="line-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="repo-count">
+        <p>Repositiores per page :</p>
+        <select name="repository-count" id="repository-count">
+          <option value="10" selected>10</option>
+          <option value="25">25</option>
+          <option value="50">50</option>
+          <option value="75">75</option>
+          <option value="100">100</option>
+        </select>
       </div>
 
       <div class="overlay">
@@ -79,22 +100,4 @@
     </section>
   </body>
   <script type="text/javascript" src="script.js"></script>
-  <!-- <script type="module">
-    import { Octokit } from "https://esm.sh/@octokit/rest";
-
-    const octokit = new Octokit({});
-
-    const func = async () => {
-      const data = await octokit.paginate("GET /users/achal-00/repos/", {
-        per_page: 10,
-        headers: {
-          Authorization: "token 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",
-        },
-      });
-
-      console.log(data);
-    };
-
-    func();
-  </script> -->
 </html>
