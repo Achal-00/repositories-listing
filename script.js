@@ -53,6 +53,7 @@ document.addEventListener(
 // Fetching onSubmit
 
 const onSubmit = async (event) => {
+  currentPage = 1;
   event.preventDefault();
   document.querySelector(".overlay").style.display = "flex";
   username = document.getElementById("username").value;
